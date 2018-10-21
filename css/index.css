@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  background: #333333;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+}
+header .nav-container {
+  width: 800px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+header .nav-container h1 {
+  color: white;
+  font-size: 2.4rem;
+}
+header .nav-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav-container nav a {
+  font-size: 1.4rem;
+  color: white;
+  margin-left: 90px;
+  text-decoration: none;
+}
+header .nav-container nav a:hover {
+  font-size: 1.8rem;
+  color: blue;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.home {
+  display: block;
+  justify-content: space-evenly;
+  height: 400px;
+}
+@media (max-width: 700px) {
+  .home {
+    flex-wrap: wrap;
+  }
+}
+.home .left-content {
+  width: 35%;
+  margin: 25px;
+}
+.home .left-content img.content {
+  width: 98%;
+  height: 65%;
+  margin: 20px;
+}
+@media (max-width: 700px) {
+  .home .left-content {
+    width: 100%;
+  }
+}
+.home .center-content {
+  width: 100%;
+}
+.home .center-content img.hero {
+  width: 98%;
+  height: 100%;
+  margin-bottom: 25px;
+}
+@media (max-width: 700px) {
+  .home .center-content {
+    width: 100%;
+  }
+}
+.home .right-content {
+  width: 45%;
+  display: flex;
+  justify-content: end;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.home .right-content p {
+  line-height: 1.6;
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  .home .right-content {
+    width: 100%;
+  }
+}
+.home div.block {
+  display: flex;
+  justify-content: center;
+}
+.about {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 700px) {
+  .about {
+    flex-wrap: wrap;
+  }
+}
+.about .left-content {
+  width: 18%;
+  background-color: gray;
+}
+.about .center-content {
+  width: 40%;
+}
+.about .center-content img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: 50%;
+}
+.about .center-content p {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+.about h2 {
+  margin-left: 10px;
+  line-height: 1.6;
+  font-size: 24px;
+}
+.about ul li {
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.about .block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer {
+  display: flex;
+  align-items: flex-end;
+}
+footer .footer-container {
+  margin-top: 2700px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  background: #333333;
+  width: 100%;
+  height: 200px;
+}
+footer .footer-container p {
+  line-height: 1.6;
+  font-size: 24px;
+  margin: auto;
+}
+footer .footer-containerA {
+  margin-top: 70px;
+  background: #333333;
+  width: 100%;
+  height: 200px;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
